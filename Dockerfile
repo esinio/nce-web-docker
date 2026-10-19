@@ -1,5 +1,5 @@
 # ---------- 阶段 1: 拉取源码并构建 ----------
-FROM node:20-alpine AS builder
+FROM node:alpine AS builder
 
 # 安装 git 和 pnpm
 RUN apk add --no-cache git && npm install -g pnpm
